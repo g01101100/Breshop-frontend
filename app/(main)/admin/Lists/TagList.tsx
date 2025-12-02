@@ -11,7 +11,7 @@ export default function TagList(){
         })
         .then(res => {
             if(!res.ok) throw new Error("Tag não encontrada");
-            return res.json
+            return res.json()
         })
         .then(data => {
             setTags(prev => prev.filter(tag => tag.id !== pk))
@@ -40,7 +40,7 @@ export default function TagList(){
                             <p>Id: {tag.id}</p>
                             <p>Name: {tag.name}</p>
                         </div>
-                        <div className="flex gap-5">
+                        <div className="flex justify-center items-center gap-5">
                             <button className="px-2 py-1 rounded-md bg-sky-600 font-bold text-sm">Atualizar</button>
                             <button onClick={() => deleteTag(tag.id)} className="px-2 py-1 rounded-md bg-red-600 font-bold text-sm">Excluir</button>
                         </div>

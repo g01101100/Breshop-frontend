@@ -56,7 +56,7 @@ export default function AdminForm(){
     
     return( 
         <>
-            <nav className="absolute flex justify-center top-20 left-1/2 -translate-1/2 w-full gap-10">
+            <nav className="absolute flex justify-center top-30 left-1/2 -translate-1/2 w-full gap-10">
                 <button onClick={handleUserFormOpen}>
                     <AdminNavInput grupo="form">User</AdminNavInput>
                 </button>
@@ -77,7 +77,7 @@ export default function AdminForm(){
                     <AdminNavInput grupo="form">Address</AdminNavInput>
                 </button>
             </nav>
-            <main className="pt-15 w-2/4">
+            <main className="pt-22 w-2/4">
                 {isAddressFormOpen && (
                     <AddressForm />
                 )}

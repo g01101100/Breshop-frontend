@@ -25,7 +25,7 @@ export default function Header(){
                     <Search size={20}/>
                 </button>
                 
-                <Link href={'/admin'}>
+                <Link href={'/login'}>
                     <UserRound size={20}/>
                 </Link>
 
