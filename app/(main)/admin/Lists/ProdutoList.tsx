@@ -42,7 +42,6 @@ export default function ProdutoList(){
                                 <p>Brecho: {produto.brecho_id}</p>
                             </div>
                             <div className="flex justify-center items-center gap-5">
-                                <button className="px-2 py-1 rounded-md bg-sky-600 font-bold text-sm">Atualizar</button>
                                 <button onClick={() => deleteProduct(produto.id)} className="px-2 py-1 rounded-md bg-red-600 font-bold text-sm">Excluir</button>
                             </div>
 

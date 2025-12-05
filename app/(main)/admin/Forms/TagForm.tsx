@@ -34,7 +34,7 @@ export default function TagForm(){
     }
     
     return(
-        <form method="POST" onSubmit={criarTag}>
+        <form method={"POST"} onSubmit={(e) => criarTag(e)}>
             <div className="space-y-12">
                 <div className="border-b border-white/20 pb-12">
                     <h2 className="text-white text-xl font-bold">Tag</h2>
