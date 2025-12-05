@@ -64,7 +64,7 @@ export default function BrechoList(){
     
     const Form = (pk: number, oldName: string, oldEmail: string, oldAddress: number, oldPhone: string, oldInstagram: string) => {
         return(
-            <form method="PUT" onSubmit={() => atualizarBrecho}>
+            <form method="PUT" onSubmit={(e) => atualizarBrecho(pk, e)}>
             <div className="space-y-12 mt-5">
                 
                 <div className="border-b border-white/20 pb-12">

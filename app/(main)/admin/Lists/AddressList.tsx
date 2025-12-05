@@ -65,7 +65,7 @@ export default function AddressList(){
 
     const Form = (pk:number, oldCep: string, oldState: string, oldCity: string, oldStreet: string, oldNumber: number) => {
          return(
-            <form method="PUT" onSubmit={() => atualizarEndereco}>
+            <form method="PUT" onSubmit={(e) => atualizarEndereco(pk, e)}>
                 <div className="space-y-12 mt-5">  
                     <div className="border-b border-white/20 pb-12">
                         <h2 className="text-white text-xl font-bold">Endereço</h2>
